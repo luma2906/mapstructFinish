@@ -1,1 +1,1 @@
-web: java -jar target/mapstruct-1.0.jar
+web: java -jar mapstruct-1.0.jar
