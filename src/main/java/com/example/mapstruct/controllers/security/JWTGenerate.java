@@ -12,8 +12,7 @@ import javax.security.auth.Subject;
 import java.util.Date;
 @Component
 public class JWTGenerate {
-    @Value("${app.secret}")
-    private  String KEY;
+    private  String KEY = "lU1S4M4R1N";
     public String generateToken(UserDetails userDetails){
         return Jwts.builder().setSubject(userDetails.getUsername()).setIssuedAt(new Date())
                 .setExpiration(new Date(System.currentTimeMillis() + 1000 * 60 * 60 *2))
